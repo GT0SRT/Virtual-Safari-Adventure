@@ -56,4 +56,98 @@
        }
     }
     /* loader css end */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(https://images.unsplash.com/photo-1621025975976-54ffaad6b8a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2FmYXJpJTIwamVlcCUyMHRyYXZlbGxpbmd8ZW58MHx8MHx8fDA%3D) no-repeat center;
+        background-size: cover;
+        z-index: -1;
+    } 
+    
+    .inner{
+        height: 70%;
+        width: 70%;
+        border: 3px solid black;
+        background-position-x: center;
+        background-position-y: center;
+        padding: 0 30px;
+        padding-top: 20px;
+        z-index: 1;
+        background: url(./images/96e742cb9af9ddde874b509cba601ac4.jpg) no-repeat  center;
+        background-size: 100% auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+        position: absolute;
+        gap: 1rem;
+    }
+    
+    .space{
+        margin-bottom: 2rem;
+        color: rgb(23, 103, 23);
+    }
+    h2{
+        color: rgb(23, 103, 23);
+    }
+    
+    .divider{
+        text-align: left;
+        margin-bottom: 7rem;
+    }
+    
+    .name{
+        width: 100%;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .name img{
+        height: 12rem;
+        width: 8rem;
+        align-self: start;
+        object-fit: cover;
+        border-radius: 20%;
+    }
+    
+    .login-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .name-text{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 10px;
+        border: solid seagreen;
+        padding-left: 5px;
+        background-color: white;
+        color: rgb(11, 73, 11);
+    }
+    
+    .b1{
+        border: solid seagreen;
+        border-radius: 10px;
+        height: 3rem;
+        width: 6rem;
+        background-color: white;
+        color: rgb(11, 73, 11);
+        font-weight: bold;
+    }
+    
+    .b1:hover{
+        background-color: seagreen;
+    }
   
