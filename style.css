@@ -57,63 +57,7 @@
     }
     /* loader css end */
 
-/* nav bar css start*/
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  background: var(--main-color);
-  /* justify-content: space-between; */
-  align-items: center;
-  z-index: 100;
-  transition: .3s;
-}
 
-.header.sticky {
-  background: var(--bg-color);
-}
-
-.logo{
-  position: relative;
-  font-size: 30px;
-  color: var(--text-color);
-  font-weight: 600;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.navbar {
-  position: relative;
-  margin-left: 36%;
-}
-
-.navbar a{
-  font-size: 25px;
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 300;
-  margin: 10px;
-  transition: 0.3s;
-  padding: 3px;
-}
-
-.navbar a:hover,
-.navbar a.active{
-  color: white;
-  background-color: transparent;
-}
-/* 
-#menu-icon{
-  position: relative;
-  font-size: 50px;
-  color: var(--text-color);
-  cursor: pointer;
-  display: none;
-} */
-
-/*nav bar ss end  */
     *{
         margin: 0;
         padding: 0;
