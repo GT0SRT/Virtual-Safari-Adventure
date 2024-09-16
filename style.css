@@ -7,7 +7,7 @@
   :root {
     --bg-color:white;
     --text-color: black;
-    --main-color: yellow;
+    --main-color: rgba(226, 109, 26, 0.797);
   }
   /* body{
 
