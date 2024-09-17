@@ -40,3 +40,18 @@ the natural world right to your screen. Join us and let your adventure begin!*
 
 ## Mentor
 - Singpalli Kartik
+
+## Setup and Installation
+To run this website locally on your machine:
+
+1. *Clone the repository:*
+   bash
+   git clone https://github.com/GT0SRT/Virtual-Safari-Adventure.git
+   
+2. *Navigate to the project directory:*
+   bash
+   cd Virtual-Safari-Adventure
+   
+3. **Open the open.html file** in your preferred web browser:
+   bash
+   open home.html
