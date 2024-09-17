@@ -71,6 +71,12 @@
  }
 }
 
+@media(max-width:800px){
+  .loader{
+    display: none;
+  }
+}
+
   /* loader end */
 
 #page{
@@ -86,7 +92,7 @@
   left: 0;
   display: flex;
   width: 100%;
-  /* background: #824026bd; */
+  /* background: #5b995ade; */
   /* justify-content: space-between; */
   align-items: center;
   z-index: 100;
@@ -99,7 +105,7 @@
 
 .logo{
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   font-weight: 600;
   text-decoration: none;
@@ -108,24 +114,98 @@
 
 .navbar {
   position: relative;
-  margin-left: 36%;
+  margin-left: 42%;
 }
 
 .navbar a{
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
   font-weight: 300;
   margin: 10px;
   transition: 0.3s;
   padding: 3px;
+  display: flex;
 }
 
 .navbar a:hover,
 .navbar a.active{
-  color: #f8f17f;
+  color: #5B995A;
   background-color: transparent;
 }
+
+.menu{
+  display: none;
+}
+
+@media(max-width:1250px){
+  .navbar {
+    margin-left: 36%;
+  }
+}
+@media(max-width:1060px){
+  .navbar {
+    margin-left: 32%;
+  }
+}
+
+@media(max-width:960px){
+  .navbar{
+    margin-left: 28%;
+  }
+}
+@media(max-width:900px){
+  .navbar{
+    margin-left: 18%;
+  }
+}
+
+@media(max-width:800px){
+  .navbar a{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    margin-left: 52%;
+  }
+}
+
+@media(max-width:700px){
+  .menu{
+    margin-left: 45%;
+  }
+}
+
+@media(max-width:600px){
+  .menu{
+    margin-left: 40%;
+  }
+}
+@media(max-width:450px){
+  .menu{
+    margin-left: 32%;
+  }
+}
+@media(max-width:350px){
+  .menu{
+    margin-left: 22%;
+  }
+}
+
+.navbar2{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar2 a{
+  color: white;
+  text-decoration: none;
+}
+.navbar2 a:hover,
+.navbar2 .active{
+  color: #5B995A;
+}
+
 /* 
 #menu-icon{
   position: relative;
@@ -213,6 +293,19 @@
     display: flex;
 }
 
+@media(max-width:550px){
+  .head{
+    font-size: 60px;
+    top: 20%;
+  }
+}
+@media(max-width:420px){
+  .head{
+    font-size: 60px;
+    top: 10%;
+  }
+}
+
 /* meet team css */
 
 .wrapper{
@@ -232,38 +325,18 @@
           justify-content: center;
 }
 
+@media(max-width: 800px){
+  .cols{
+    flex-direction: column;
+  }
+}
+
 .col{
   width: calc(25% - 2rem);
   margin: 2.2rem;
   cursor: pointer;
   border-radius: 10px;
-  border-bottom: 2px solid #f8f17f;;
-  border-top: 2px solid var(--main-color);
-  border-left: none;
-  border-right: none;
   padding: 2px;
-  animation: aboutSpinner 3s linear infinite;
-}
-
-@keyframes aboutSpinner {
-  25%{
-    border-top: none;
-    border-bottom: none;
-    border-left: 3px solid #f8f17f;;
-    border-right: 3px solid var(--main-color);
-  }
-  50%{
-    border-top: 3px solid #f8f17f;;
-    border-bottom: 3px solid var(--main-color);
-    border-left: none;
-    border-right: none;
-  }
-  75% {
-    border-top: none;
-    border-bottom: none;
-    border-left: 3px solid  var(--main-color);
-    border-right: 3px solid #f8f17f;;
-  }
 }
 
 .container{
@@ -296,9 +369,9 @@
 
 .back{
   background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -webkit-linear-gradient(45deg,  #96D65E 0%,#5B995A 100%);
+  background: -o-linear-gradient(45deg,  #96D65E 0%,#5B995A 100%);
+  background: linear-gradient(45deg,  #96D65E 0%,#5B995A 100%);
 }
 
 .front:after{
@@ -429,7 +502,7 @@
     margin: 5px;
 }
 .first:hover, .second:hover, .third:hover{
-    background: linear-gradient(120deg ,rgb(88, 86, 86),white );
+    background: linear-gradient(120deg ,#5B995A,#96D65E);
 }
 
 .about-img{
@@ -446,21 +519,6 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-  }
-
-  .about-img .circle-spin {
-    position: absolute;
-    height: 250px;
-    width: 220px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    border-radius: 50%;
-    border-bottom: .2rem solid var(--main-color);
-    border-top: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-    border-left: .2rem solid var(--main-color);
-    animation: aboutSpinner 8s linear infinite;
   }
   
   .about-content {
@@ -484,122 +542,32 @@
   
 
   /* Faq's css start */
-.faq .container{
-    width: 60%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    margin-left: 16%;
-    margin-right: 16%;
+  .faq {
+    padding: 2rem;
+  }
+  .faq h1 {
+    margin-bottom: 1rem;
+  }
+
+  /* contact */
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+.toast .toast-header{
+  background: linear-gradient(180deg ,#5B995A,#96D65E);
 }
 
-  .accordion {
-    background-color: var(--bg-color);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-  /* Faq's css end */
-
-  /* footer start */
+  /* footer */
 footer{
-  width: 100%;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(180deg ,#5B995A,#96D65E);
+}
+footer .nav a{
+  color: #fff;
 }
 
-  footer h2{
-    font-size: 7vh;
-    font-weight: 700;
-    margin-left: 30%;
-  }
-  .contact{
-    display: flex;
-    margin-left: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .input-field{
-    margin: 5px;
-    padding: 5px;
-  }
-
-  .input-field input{
-    padding: 5px;
-    width: 200px;
-  }
-
-  .input-field input:hover{
-    background-color: rgb(214, 209, 212);
-  }
-
-  .contact button{
-    margin: 5px;
-    padding: 3px;
-    width: 90px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-  }
-
-  .contact button:hover{
-    background-color: darkgray;
-  }
-
-  footer img{
-    width: 100%;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer-iconTop{
-    margin-left: 50%;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 40%;
-  }
-  .footer-iconTop a{
-    text-decoration: none;
-    color: black;
-    background-color: #96D65E;
-    
-  }
-  .footer-iconTop:hover{
-    background-color: var(--main-color);
-  }
-
-  /* footer end */
+footer .nav a:hover{
+  color: black;
+}
