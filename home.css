@@ -333,7 +333,7 @@ main {
 }
 
 .card1{
-    background: url('https://cdn.pixabay.com/photo/2016/12/05/11/39/fox-1883658_640.jpg');
+    /* background: url('https://cdn.pixabay.com/photo/2016/12/05/11/39/fox-1883658_640.jpg'); */
     height: 300px;
     width: 150px;
     display: flex;
@@ -343,11 +343,25 @@ main {
     translate: transform(-50%, -50%); */
 }
 
+.card1 img{
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .innercard{
     height: 150px;
     width: 150px;
     margin: 5px;
     border-radius: 10px;
+}
+
+.first img{
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .first:hover{
@@ -396,6 +410,9 @@ footer{
     background: linear-gradient(180deg ,#5B995A,#96D65E);
     margin-top: 12.5%;
     align-self: flex-end;
+  }
+  @media(max-width: 450px){
+    footer{margin-top: 60%;}
   }
   footer .nav a{
     color: #fff;
