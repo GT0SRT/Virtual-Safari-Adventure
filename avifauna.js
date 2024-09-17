@@ -2,17 +2,7 @@
 setTimeout(function(){
     document.querySelector('.loader').style.display = 'none';
     document.querySelector('#page').style.display = 'block';
-},800)
-
-// on scroll animation
-let lane = document.querySelectorAll('.brdr');
-lane.forEach(function(dets){
-    window.addEventListener('scroll', function() {
-        var value = window.scrollY * 0.7;
-        dets.style.width = `${value}px`;
-        dets.style.marginleft = `${value}px`;
-    });
-})
+},1000)
 
 // main animation
 let next = document.querySelector('.next')
