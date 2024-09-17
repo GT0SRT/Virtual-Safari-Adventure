@@ -31,6 +31,8 @@ html, body{
     background-size: cover;
     display: inline-block;
     transition: 0.5s;
+     overflow-x: hidden;
+    
 }
 
 .slide .item:nth-child(1),
