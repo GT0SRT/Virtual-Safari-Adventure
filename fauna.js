@@ -1,3 +1,9 @@
+// loader js start
+setTimeout(function(){
+    document.querySelector('.loader').style.display = 'none';
+    document.querySelector('#page').style.display = 'block';
+},1000)
+
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 
