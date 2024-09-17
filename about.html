@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,17 @@
     <link rel="stylesheet" href="about.css">
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        h1,.mb-4 {
+            font-family: "Protest Guerrilla", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-
 <body>
     <!-- animated loader -->
     <div class="loader">
@@ -23,7 +31,6 @@
     <!-- nav bar section -->
     <header class="header">
         <a href="#" class="logo">Safari</a>
-        
         <nav class="navbar">
           <a href="index.html">Home</a>
           <a href="about.html" class="active" >About</a>
@@ -34,9 +41,28 @@
     
           <span class="active-nav"></span>
         </nav>
+        <div class="menu" style="flex-direction: column;">
+        <div class="menu">
+            <button class="btn btn-primary" style="background: #5B995A; border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              MENU
+            </button>
+        </div>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body" style="background-color: #5b995a78; color: black;">
+                <nav class="navbar2">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active" >About</a>
+                    <a href="#">Flaura</a>
+                    <a href="#">Fauna</a>
+                    <a href="#">Aquatic-Fauna</a>
+                    <a href="avifauna.html">Avifauna</a>
+                    <span class="active-nav"></span>
+                  </nav>
+            </div>
+          </div>
+          </div>
       </header>
     <!-- nav end -->
-
         <!-- about page -->
         <div class="about">
             <!-- introduction start-->
@@ -48,7 +74,6 @@
                     <div class="head">About.</div>
                 </div>
                 <h1>Introduction</h1>
-                <div class="brdr"></div>
                 <div class="para">
                     Welcome to Virtual Safari Adventure, where the wild comes alive from the comfort of your home!
                     Embark on a breathtaking journey through some of the world’s most stunning landscapes and encounter
@@ -66,19 +91,18 @@
             <!-- Meet team members start -->
             <div class="wrapper">
                 <h1>Meet Team Members</h1>
-                <div class="brdr"></div>
                 <div class="cols">
                           <div class="col" ontouchstart="this.classList.toggle('hover');">
                               <div class="container">
                                   <div class="front" style="background-image: url(Gourav.jpg)">
                                       <div class="inner">
                                           <p>Gourav Makode</p>
-                            <span>Web Developer</span>
+                                          <span>M.L. Engineer</span>
                                       </div>
                                   </div>
                                   <div class="back">
                                       <div class="inner">
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                        <p>I'm from CSE UIT RGPV.</p>
                                       </div>
                                   </div>
                               </div>
@@ -88,12 +112,12 @@
                                   <div class="front" style="background-image: url(victoria-crowned-pigeon.jpg)">
                                       <div class="inner">
                                           <p>Bulbul Malviya</p>
-                            <span>Web Developer</span>
+                                          <span>Data scientist</span>
                                       </div>
                                   </div>
                                   <div class="back">
                                       <div class="inner">
-                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                          <p>I'm from CSDS soit RGPV</p>
                                       </div>
                                   </div>
                               </div>
@@ -103,12 +127,12 @@
                                   <div class="front" style="background-image: url(https://img.freepik.com/free-vector/cute-cool-boy-dabbing-pose-cartoon-vector-icon-illustration-people-fashion-icon-concept-isolated_138676-5680.jpg)">
                                       <div class="inner">
                                           <p>Himansh Prajapati</p>
-                            <span>Web Developer</span>
+                                          <span>Web Developer</span>
                                       </div>
                                   </div>
                                   <div class="back">
                                       <div class="inner">
-                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                          <p>I'm from AU branch UIT RGPV.</p>
                                       </div>
                                   </div>
                               </div>
@@ -119,60 +143,151 @@
             <!-- FAQ -->
             <div class="faq">
                 <h1>Frequently Asked Questions</h1>
-                <div class="brdr"></div>
                 <div class="container">
-                    <button class="accordion">What is a virtual safari adventure?</button>
-                    <div class="panel">
-                        <p>A virtual safari adventure is an immersive online experience that allows you to explore
-                            wildlife and landscapes from the comfort of your home. Through high-definition videos,
-                            interactive maps, and live guides, you can witness the beauty of the African savannah,
-                            rainforests, and more, all in real-time.</p>
-                    </div>
-
-                    <button class="accordion">Do I need any special equipment to enjoy the safari?</button>
-                    <div class="panel">
-                        <p>No special equipment is required, but a good internet connection is essential. For the best
-                            experience, we recommend using a computer or tablet with a large screen. If you have a VR
-                            headset, some of our experiences are compatible with VR for a more immersive adventure.</p>
-                    </div>
-
-                    <button class="accordion">Are the safaris live or pre-recorded?</button>
-                    <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-
-                    <button class="accordion">Can I book a private safari for a special event or group?</button>
-                    <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is a virtual safari adventure?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    A virtual safari adventure is an immersive online experience that allows you to explore
+                                    wildlife and landscapes from the comfort of your home. Through high-definition videos,
+                                    interactive maps, and live guides, you can witness the beauty of the African savannah,
+                                    rainforests, and more, all in real-time.
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do I need any special equipment to enjoy the safari?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No special equipment is required, but a good internet connection is essential. For the best
+                                    experience, we recommend using a computer or tablet with a large screen. If you have a VR
+                                    headset, some of our experiences are compatible with VR for a more immersive adventure.
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Are the safaris live or pre-recorded?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    They are pre-recorded but we are working further for live too just stay connected.
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I book a private safari for a special event or group?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can book and get discounts too with us.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>        
             <!-- faq end -->
 
-            <!-- testimonials -->
-             <!-- soch raha hu baad mai banunga -->
-            <!-- testimonials end -->
+            <!-- contact section start -->
+            <section id="contact" class="container py-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Contact Us</h2>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button style="background-color: #5B995A; border: none;" type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Our Location</h2>
+                        <p><strong>Address:</strong> UIT RGPV, Bhopal, M.P. 462023</p>
+                        <p><strong>Phone:</strong> 0755 1001921</p>
+                        <p><strong>Email:</strong> safari@vanyatechlife.com</p>
+                        <div class="map-container mt-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3981.6652036575856!2d77.36158884929672!3d23.308927584571965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1726556441205!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Toast Notification -->
+            <div class="toast" id="toastSuccess" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Success</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Your message has been sent successfully!
+                </div>
+            </div>
+            <!-- contact section end -->
 
             <!-- footer start-->
-             <!-- <footer>
-                <h2>contact Us</h2>
-                <div class="brdr"></div>
-                <div class="contact">
-                    <div class="input-field">
-                        <input type="text" placeholder="Email Address" required>
+            <footer class="footer bg-light text-dark">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Horizontal Menu -->
+                        <div class="col-md-8">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Fauna</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Aquatic-Fauna</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">avifauna</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <!-- Copyright section -->
+                        <div class="col-md-4 text-md-end text-center">
+                            <p class="mb-0">&copy; 2024 vanya techlife &reg;. All rights reserved.</p>
+                        </div>
                     </div>
-                    <button type="submit" class="btn" onclick="alert('Submitted')">Submit</button>
-                    <div class="footer-iconTop"><a href="#">UP</a></div>
                 </div>
-                <img src="footer.jpg" alt="">
-            </footer> -->
+            </footer>
             <!-- footer end -->
         </div>
         <script src="about.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
