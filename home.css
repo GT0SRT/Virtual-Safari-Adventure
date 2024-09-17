@@ -14,7 +14,62 @@ body {
   }
   
 
-/* nav bar */
+/* loader css start */
+
+.loader{
+    width:200px;
+    height:200px;
+    position:relative;
+    display:flex;
+    margin: 15% 40%;
+    background: white;
+  }
+  
+  .loader div{
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius:80%;
+    animation:a 1.5s linear infinite;
+    filter:drop-shadow(0px 0px 10px --main-color);
+  }
+  .loader div:nth-child(1){
+    top:10px;
+    left:20px;
+    border-left:5px solid var(--main-color);
+  }
+  .loader div:nth-child(2){
+    top:10px;
+    right:20px;
+    border-top:5px solid var(--main-color);
+  } 
+  .loader div:nth-child(3){
+    bottom:45px;
+    left:50px;
+    border-right:5px solid var(--main-color);
+  }
+  
+  @keyframes a{
+   0%{
+       transform:rotate(0deg);
+   }
+   100%{
+       transform:rotate(360deg);         
+   }
+  }
+  
+  @media(max-width:800px){
+    .loader{
+      display: none;
+    }
+  }
+  
+    /* loader end */
+  
+  #page{
+      display: none;
+  }
+  
 
 /* nav css start*/
 
@@ -265,10 +320,10 @@ main {
 
 /* hero css  start */
 
-.background-video{
-
+.card1:hover {
+    transform: translate(-20px,-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
 
 .hero{
     display: flex;
@@ -295,6 +350,15 @@ main {
     border-radius: 10px;
 }
 
+.first:hover{
+    transform: translate(-20px,-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.second:hover{
+    transform: translate(-20px,-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 @media(max-width: 950px){
     .hero{
