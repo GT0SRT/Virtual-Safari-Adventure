@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="about.css">
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- bootstrap -->
@@ -27,40 +29,50 @@
     </div>
     <!-- main page after loading effect -->
     <div id="page">
-
     <!-- nav bar section -->
-    <header class="header">
-        <a href="#" class="logo">Safari</a>
-        <nav class="navbar">
-          <a href="home.html">Home</a>
-          <a href="about.html" class="active" >About</a>
-          <a href="fauna.html">Fauna</a>
-          <a href="aquatic.html">Aquafauna</a>
-          <a href="avifauna.html">Avifauna</a>
-    
-          <span class="active-nav"></span>
+      <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo" style="font-size: 30px;">Safari</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+
+                 <li class="nav__item">
+                    <a href="home.html" class="nav__link">Home</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="about.html" class="nav__link  active-link">About</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="fauna.html" class="nav__link">Fauna</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="aquatic.html" class="nav__link">Aquafauna</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="avifauna.html" class="nav__link">Avifauna</a>
+                 </li>
+                 
+              </ul>
+
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
         </nav>
-        <div class="menu" style="flex-direction: column;">
-        <div class="menu">
-            <button class="btn btn-primary" style="background: #5B995A; border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              MENU
-            </button>
-        </div>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body" style="background-color: #5b995a78; color: black;">
-                <nav class="navbar2">
-                    <a href="home.html">Home</a>
-                    <a href="about.html" class="active" >About</a>
-                    <a href="fauna.html">Fauna</a>
-                    <a href="aquatic.html">Aquafauna</a>
-                    <a href="avifauna.html">Avifauna</a>
-                    <span class="active-nav"></span>
-                  </nav>
-            </div>
-          </div>
-          </div>
-      </header>
-    <!-- nav end -->
+  </header>
+
+    <!--nav end -->
         <!-- about page -->
         <div class="about">
             <!-- introduction start-->
@@ -209,23 +221,25 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <h2 class="mb-4">Contact Us</h2>
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="cacb3383-3400-4f20-a270-61ad04ebbf31"> 
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                             </div>
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <button style="background-color: #5B995A; border: none;" type="submit" class="btn btn-primary">Send</button>
                         </form>
                     </div>
@@ -254,34 +268,24 @@
             <!-- contact section end -->
 
             <!-- footer start-->
-            <footer class="footer bg-light text-dark">
+            
+            <footer class="footer mt-auto py-3">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Horizontal Menu -->
-                        <div class="col-md-8">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="home.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="fauna.html">Fauna</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="aquatic.html">Aquafauna</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="avifauna.html">avifauna</a>
-                                </li>
+                    <div class="row">
+                        <div class="col text-center">
+                            <ul class="list-inline">
+                                <li class="list-inline-item active"><a href="home.html">Home</a></li>
+                                <li class="list-inline-item"><a href="about.html">About Us</a></li>
+                                <li class="list-inline-item"><a href="fauna.html">Fauna</a></li>
+                                <li class="list-inline-item"><a href="aquatic.html">Aquafauna</a></li>
+                                <li class="list-inline-item"><a href="avifauna.html">Avifuana</a></li>
                             </ul>
-                        </div>
-        
-                        <!-- Copyright section -->
-                        <div class="col-md-4 text-md-end text-center">
-                            <p class="mb-0">&copy; 2024 vanya techlife &reg;. All rights reserved.</p>
+                            <p class="mt-3">© 2024 vanyatechlife. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </footer>
+
             <!-- footer end -->
         </div>
         <script src="about.js"></script>
