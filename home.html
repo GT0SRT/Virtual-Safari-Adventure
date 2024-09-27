@@ -1,119 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safari Theme Home Page</title>
     <link rel="stylesheet" href="home.css">
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
-        h1,.mb-4 {
+
+        h1,
+        .mb-4 {
             font-family: "Protest Guerrilla", system-ui;
             font-weight: 400;
             font-style: normal;
         }
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-     <!-- animated loader -->
-     <div class="loader">
+    <!-- animated loader -->
+    <div class="loader">
         <div></div>
         <div></div>
         <div></div>
     </div>
     <!-- main page after loading effect -->
     <div id="page">
-    <!-- nav bar section -->
-    <header class="header">
-        <a href="#" class="logo">Safari</a>
-        <nav class="navbar">
-          <a href="home.html" class="active">Home</a>
-          <a href="about.html" >About</a>
-          <a href="fauna.html">Fauna</a>
-          <a href="aquatic.html">Aquafauna</a>
-          <a href="avifauna.html">Avifauna</a>
+        <!-- <div class="clock">
+            <script src="https://climateclock.world/widget-v2.js" async></script>
+            <climate-clock />
+        </div> -->
+        <!-- nav bar section -->
+        <header class="header" id="header">
+            <nav class="nav container">
+               <a href="#" class="nav__logo" style="font-size: 30px;">Safari</a>
     
-          <span class="active-nav"></span>
-        </nav>
-        <div class="menu" style="flex-direction: column;">
-        <div class="menu">
-            <button class="btn btn-primary" style="background: #5B995A; border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              MENU
-            </button>
-        </div>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body" style="background-color: #5b995a78; color: black;">
-                <nav class="navbar2">
-                    <a href="home.html" class="active">Home</a>
-                    <a href="about.html" >About</a>
-                    <a href="fauna.html">Fauna</a>
-                    <a href="aquatic.html">Aquafauna</a>
-                    <a href="avifauna.html">Avifauna</a>
-                    <span class="active-nav"></span>
-                  </nav>
-            </div>
-          </div>
-          </div>
+               <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+    
+                     <li class="nav__item">
+                        <a href="home.html" class="nav__link active-link">Home</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="fauna.html" class="nav__link">Fauna</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="aquatic.html" class="nav__link">Aquafauna</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="avifauna.html" class="nav__link">Avifauna</a>
+                     </li>
+                     
+                  </ul>
+    
+                  <div class="nav__close" id="nav-close">
+                     <i class="ri-close-line"></i>
+                  </div>
+               </div>
+    
+               <div class="nav__actions">
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-line"></i>
+                  </div>
+               </div>
+            </nav>
       </header>
-    <main>
-        <section class="welcome">
-            <video autoplay loop muted playsinline class="background-video">
-                <source src="home.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="welcome-content">
-                <h1>Welcome to Safari Adventure</h1>
-                <p>Explore the wild with us!</p>
-                <button><a href="about.html">START</a></button>
-            </div>
+    <!-- nav end -->
+        <!-- main -->
+        <main>
+            <section class="welcome">
+                <video autoplay loop muted playsinline class="background-video">
+                    <source src="home.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="welcome-content">
+                    <h1>Welcome to Safari Adventure</h1>
+                    <p>Explore the wild with us!</p>
+                    <button class="abc"><a href="#road">Scroll to Start</a></button>
+                </div>
                 <!-- hero  -->
-     <div class="hero">
-        <div class="card1"><img src="https://cdn.pixabay.com/photo/2016/12/05/11/39/fox-1883658_640.jpg" alt=""></div>
-        <div class="card2">
-            <div class="innercard first">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZRzCJSPcs0SUXwqcEoVg6vafm6BGOlwcCQ&s" alt="">
-            </div>
-            <div class="innercard second" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM07kddS09fdwkcjT3Wrju0UigrMyfySQ59Q&s');"></div>
-        </div>
-     </div>
-        </section>
-
-     <!-- footer start-->
-     <footer class="footer bg-light text-dark">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Horizontal Menu -->
-                <div class="col-md-8">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="fauna.html">Fauna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aquatic.html">Aquafauna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="avifauna.html">avifauna</a>
-                        </li>
-                    </ul>
+                <div class="hero">
+                    <div class="card1"><img src="https://cdn.pixabay.com/photo/2016/12/05/11/39/fox-1883658_640.jpg"
+                            alt=""></div>
+                    <div class="card2">
+                        <div class="innercard first">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZRzCJSPcs0SUXwqcEoVg6vafm6BGOlwcCQ&s"
+                                alt="">
+                        </div>
+                        <div class="innercard second"
+                            style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM07kddS09fdwkcjT3Wrju0UigrMyfySQ59Q&s');">
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <!-- Copyright section -->
-                <div class="col-md-4 text-md-end text-center">
-                    <p class="mb-0">&copy; 2024 vanya techlife &reg;. All rights reserved.</p>
+            <!-- second section -->
+            <div class="road" id="road">
+                <div class="lane">
+                    <div class="image-container"><img src="https://img.freepik.com/premium-vector/cheetah-safari-jeep-cartoon-style_714091-15343.jpg" alt=""></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space">
+                        <div class="card" id="one" style="transform: translate(-170%,-10%);">
+                            <div class="card-body">
+                              <h5 class="card-title">Fauna</h5>
+                              <p class="card-text">Explore diverse terrestrial wildlife, from majestic mammals to vibrant reptiles. Witness the intricate relationships within ecosystems that sustain life. Join us to discover the wonders of our natural habitats!</p>
+                              <a href="#" class="btn btn-primary">Start</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space">
+                        <div class="card" style="transform: translate(80%,-10%);">
+                            <div class="card-body">
+                              <h5 class="card-title">Aquafauna</h5>
+                              <p class="card-text">Dive into the vibrant world of aquatic life, featuring colorful fish and thriving ecosystems. Learn about the vital roles these creatures play in maintaining balance. Join us for an underwater adventure!</p>
+                              <a href="#" class="btn btn-primary">Start</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space">
+                        <div class="card" style="transform: translate(-170%,-10%);">
+                            <div class="card-body">
+                              <h5 class="card-title">Avifauna</h5>
+                              <p class="card-text">Soar with us as we explore stunning bird species, from songbirds to raptors. Discover their unique behaviors and habitats. Experience the beauty of avifauna in our natural world!</p>
+                              <a href="#" class="btn btn-primary">Start</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
                 </div>
+                <div class="end"><h1>Visit Again!!!</h1></div>
             </div>
-        </div>
-    </footer>
-    </main>
-    <!-- footer end -->
-     </div>
+
+            <!-- mobile  -->
+             <div class="mobile">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Fauna</h5>
+                      <p class="card-text">Explore diverse terrestrial wildlife, from majestic mammals to vibrant reptiles. Witness the intricate relationships within ecosystems that sustain life. Join us to discover the wonders of our natural habitats!</p>
+                      <a href="#" class="btn btn-primary">Start</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Aquafauna</h5>
+                      <p class="card-text">Dive into the vibrant world of aquatic life, featuring colorful fish and thriving ecosystems. Learn about the vital roles these creatures play in maintaining balance. Join us for an underwater adventure!</p>
+                      <a href="#" class="btn btn-primary">Start</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Avifauna</h5>
+                      <p class="card-text">Soar with us as we explore stunning bird species, from songbirds to raptors. Discover their unique behaviors and habitats. Experience the beauty of avifauna in our natural world!</p>
+                      <a href="#" class="btn btn-primary">Start</a>
+                    </div>
+                  </div>
+             </div>
+
+            <!-- testimonials section -->
+             
+  
+    
+<div class="container py-4">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<div class="lc-block mb-4"><span editable="inline" class="small mt-4 d-block"></span>
+				<h2 editable="inline" class="display-2 mb-0" style="font-size: 50px; margin: 0;"><b>Testimonial</b></h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mt-4">
+		<div class="col-md-8 offset-md-2">
+			<div class="lc-block">
+				<div id="testimonial-slider" class="carousel slide" data-bs-ride="carousel">
+
+					<!-- Indicators -->
+					<ul class="carousel-indicators list-unstyled">
+						<li data-bs-target="#testimonial-slider" data-bs-slide-to="0" class="active"></li>
+						<li data-bs-target="#testimonial-slider" data-bs-slide-to="1"></li>
+						<li data-bs-target="#testimonial-slider" data-bs-slide-to="2"></li>
+					</ul>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+						<div class="carousel-item ">
+							<img src="https://images.unsplash.com/photo-1445053023192-8d45cb66099d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo by Christopher Campbell">
+							<div class="carousel-caption text-white">
+								<p editable="inline">"The virtual safari adventure was a game changer! I felt like I was right in the heart of the savannah, witnessing incredible wildlife up close. The detailed narration and immersive visuals brought the experience to life. I can't wait to share this with my friends!"&nbsp;</p>
+								<h5 editable="inline"><strong>Sarah Thompson</strong></h5>
+								<small editable="inline" style="letter-spacing:1px">Wildlife Enthusiast&nbsp;</small>
+							</div>
+
+
+						</div>
+						<div class="carousel-item active">
+							<img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9" alt="Photo by averie woodard">
+							<div class="carousel-caption text-white">
+								<p editable="inline">"As an adventure blogger, I've experienced many safaris, but this virtual tour exceeded my expectations. The ability to explore various ecosystems and learn about the animals from experts was fantastic. It’s the next best thing to being there in person!"&nbsp;</p>
+								<h5 editable="inline"><strong>Eddie Valiant</strong></h5>
+								<small editable="inline" style="letter-spacing:1px">Adventure Blogger&nbsp;</small>
+							</div>
+
+
+						</div>
+						<div class="carousel-item ">
+							<img src="https://images.unsplash.com/photo-1471017851983-fc49d89c57c2?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9" alt="Photo by Jens Lindner">
+							<div class="carousel-caption text-white">
+								<p editable="inline">"Our family had a blast on the virtual safari! It was educational and entertaining for both the kids and adults. We loved the interactive elements and the stunning visuals. It’s a perfect way to spark an interest in wildlife and nature!"&nbsp;</p>
+								<h5 editable="inline"><strong>Emily Chen</strong></h5>
+								<small editable="inline" style="letter-spacing:1px">Family Travel Planner&nbsp;</small>
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#testimonial-slider" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#testimonial-slider" data-bs-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+
+				</div>
+			</div>
+		</div><!-- /col -->
+	</div>
+</div>
+ 
+ 
+               
+
+            
+            <!-- footer start-->
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <ul class="list-inline">
+                                <li class="list-inline-item active"><a href="home.html">Home</a></li>
+                                <li class="list-inline-item"><a href="about.html">About Us</a></li>
+                                <li class="list-inline-item"><a href="fauna.html">Fauna</a></li>
+                                <li class="list-inline-item"><a href="aquatic.html">Aquafauna</a></li>
+                                <li class="list-inline-item"><a href="avifauna.html">Avifuana</a></li>
+                            </ul>
+                            <p class="mt-3">© 2024 vanyatechlife. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <!-- footer end -->
+    </div>
 
     <script src="home.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
+
 </html>
