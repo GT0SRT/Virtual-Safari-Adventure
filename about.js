@@ -25,13 +25,63 @@
 //     });
 // })
 
+
 // contact
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  var toastEl = document.getElementById('toastSuccess');
-  var toast = new bootstrap.Toast(toastEl, {
-      delay: 3000 
+  event.preventDefault(); // Prevent the default form submission
+  const formData = new FormData(this);
+  fetch(this.action, {
+      method: 'POST',
+      body: formData,
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.success) {
+          // Show success toast
+          var toast = new bootstrap.Toast(document.getElementById('toastSuccess'),  {
+            delay: 3000 
+          });
+          toast.show(); 
+          this.reset();
+      } else {
+          alert('There was an error sending your message.');
+      }
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      alert('There was a problem with the submission.');
   });
-  toast.show(); 
-  this.reset();
 });
+
+// SHOW MENU 
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navClose = document.getElementById('nav-close');
+
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/* REMOVE MENU MOBILE */
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/* ADD BLUR HEADER */
+const blurHeader = () => {
+    const header = document.getElementById("header")
+    this.scrollY >= 50 ? header.classList.add('scroll-header')
+        : header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', blurHeader)
