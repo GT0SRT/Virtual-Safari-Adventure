@@ -125,7 +125,7 @@ body{
 }
 
 .nav__list .active-link, .nav__item a:hover{
-  color: #5b995ade;
+  color: rgb(84, 205, 207);
 }
 
 .nav__close, .nav__toggle{
