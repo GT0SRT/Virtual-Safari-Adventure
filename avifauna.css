@@ -150,14 +150,30 @@ body{
     column-gap: .5rem;
     align-items: center;
  }
+.mobile{
+  display: none;
+ }
 
+ .content .btn2{
+  color: black;
+ }
+ .content .btn2:hover{
+  color: var(--main-color);
+ }
 
 /* Navigation for mobile devices */
 @media screen and (max-width:1150px){
   .nav__close, .nav__toggle{
     display: block;
   }
-
+ .container .mobile{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .container{
+    overflow: hidden;
+  }
   .header{
     top:0;
   }
