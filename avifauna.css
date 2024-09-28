@@ -156,6 +156,7 @@ body{
 
  .content .btn2{
   color: black;
+   display: none;
  }
  .content .btn2:hover{
   color: var(--main-color);
@@ -165,6 +166,9 @@ body{
 @media screen and (max-width:1150px){
   .nav__close, .nav__toggle{
     display: block;
+  }
+  .content .btn2{
+    display: flex;
   }
  .container .mobile{
     display: flex;
