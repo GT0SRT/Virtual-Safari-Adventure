@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fauna.css">
-    <title>safari adventure </title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <title>Aquafauna</title>
+    <link rel="stylesheet" href="avifauna.css">
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- google fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-        .logo, .name,.des, button {
+        .nav__logo, .name,.des, button {
             font-family: "Salsa", cursive;
             font-weight: 400;
             font-style: normal;
@@ -30,76 +28,134 @@
     <!-- main page after loading effect -->
     <div id="page">
         <!-- nav bar section -->
-        <header class="header">
-            <a href="#" class="logo">Terrestrial Fauna</a>
-            
-            <nav class="navbar">
-              <a href="home.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="fauna.html" class="active">Fauna</a>
-              <a href="aquatic.html">Aquafauna</a>
-              <a href="avifauna.html">Avifauna</a>
         
-              <span class="active-nav"></span>
+        <header class="header" id="header">
+            <nav class="nav container">
+               <a href="#" class="nav__logo" style="font-size: 30px;">Terrestrial Fauna</a>
+    
+               <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+    
+                     <li class="nav__item">
+                        <a href="home.html" class="nav__link">Home</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="fauna.html" class="nav__link active-link">Fauna</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="aquatic.html" class="nav__link">Aquafauna</a>
+                     </li>
+    
+                     <li class="nav__item">
+                        <a href="avifauna.html" class="nav__link">Avifauna</a>
+                     </li>
+                     
+                  </ul>
+    
+                  <div class="nav__close" id="nav-close">
+                     <i class="ri-close-line"></i>
+                  </div>
+               </div>
+    
+               <div class="nav__actions">
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-line"></i>
+                  </div>
+               </div>
             </nav>
-          </header>
-          <!-- nav bar end -->
+      </header>
 
+        <!-- nav bar end -->
 
-    <!-- main section  -->
-    <div class="main">
-     <div class="container">
-      <div class="slide">
+        <!-- main section  -->
+        <div class="main">
+            <div class="container">
+                <div class="mobile">
+            <div class="content des">
+                <h1>Avifauna</h1>
+            </div>
+         </div>
+         <div class="slide">
         
-        <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/gorilla-family-heart-african-rainforest_198067-7907.jpg);">
+          <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/gorilla-family-heart-african-rainforest_198067-7907.jpg);">
+            <div class="overlay"></div>
+              <div class="content">
+                <div class="name">gorilla</div>
+                <div class="des">Gorillas are herbivorous,predominantly ground-dwelling great apes that inhabit the tropical forets of equatorial africas The genus Gorilla is divided into two species ; The eastern and the  western gorilla.</div>
+                <button>See More</button>
+                <button class="btn2" style="background-color: white;">
+                                <a href="home.html" target="_blank">Go Back</a>
+                  </button>
+            </div>
+        </div>
+        
+        <div class="item" style="background-image: url(https://img.freepik.com/free-photo/lion-dry-forest-landscape_23-2151661796.jpg);">
+          <div class="overlay"></div>  
+          <div class="content">
+                <div class="name">lion</div>
+                <div class="des">Lions is a large cat of the genus panthera native to africa and india. it adapts to being active At Night and At Twilight during the neolithic period ,the ranged throughout Africa and Eurasia ,from southeast europe to india . </div>
+                <button>See More</button>
+                <button class="btn2" style="background-color: white;">
+                                <a href="home.html" target="_blank">Go Back</a>
+                            </button>
+            </div>
+        </div>
+         <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/zebra-natural-light-wild_9493-26893.jpg);">
           <div class="overlay"></div>
-            <div class="content">
-              <div class="name">gorilla</div>
-              <div class="des">Gorillas are herbivorous,predominantly ground-dwelling great apes that inhabit the tropical forets of equatorial africas The genus Gorilla is divided into two species ; The eastern and the  western gorilla.</div>
-               <button> <a href="https://en.wikipedia.org/wiki/gorilla#"> see more </a></button>
+          <div class="content">
+              <div class="name">Zebra</div>
+              <div class="des">zebra are africans equines with distinctive black and white striped coats Zebra are primarily grazers and can be subsist on lower -quality vegetation .they are preyed on mainly by lions and typically flee when threatened but also bite and kick .</div>
+              <button>See More</button>
+              <button class="btn2" style="background-color: white;">
+                                <a href="home.html" target="_blank">Go Back</a>
+                            </button>
           </div>
       </div>
-      
-      <div class="item" style="background-image: url(https://img.freepik.com/free-photo/lion-dry-forest-landscape_23-2151661796.jpg);">
-        <div class="overlay"></div>  
-        <div class="content">
-              <div class="name">lion</div>
-              <div class="des">Lions is a large cat of the genus panthera native to africa and india. it adapts to being active At Night and At Twilight during the neolithic period ,the ranged throughout Africa and Eurasia ,from southeast europe to india . </div>
-              <button> <a href="https://en.wikipedia.org/wiki/lion#"> see more </a></button>
+      <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/leopard-nature_349893-3431.jpg) ;">
+          <div class="overlay"></div>
+          <div class="content">
+              <div class="name">leapord </div>
+              <div class="des">the leapord is one of the five extant species in the genus panthera The leopard is adapted to a variety of habitats ranging from rainforest to steppe ,including arid and montane areas . it is an opportunistic predator.</div>
+                    <button>See More</button>
+                    <button class="btn2" style="background-color: white;">
+                                <a href="home.html" target="_blank">Go Back</a>
+                            </button>
           </div>
       </div>
-       <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/zebra-natural-light-wild_9493-26893.jpg);">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="name">Zebra</div>
-            <div class="des">zebra are africans equines with distinctive black and white striped coats Zebra are primarily grazers and can be subsist on lower -quality vegetation .they are preyed on mainly by lions and typically flee when threatened but also bite and kick .</div>
-            <button> <a href="https://en.wikipedia.org/wiki/zebra#"> see more </a></button>
+      <div class="item" style="background-image: url(https://media.istockphoto.com/id/105701467/photo/a-mother-elephant-walking-with-her-calf-in-the-grass.jpg?s=612x612&w=0&k=20&c=nHr8WlqXAEG6g9LadfeLxxT7Qj0hSMOx5dmhm7Tbmdw=);">
+          <div class="overlay"></div>
+          <div class="content">
+          <div class="name">Elephant</div>
+          <div class="des">Elephant is  the largest living land animals They are Herbivorus, and they stay near water when it accessible they are considered to be keystone species.</div>
+                <button>See More</button>
+                <button class="btn2" style="background-color: white;">
+                                <a href="home.html" target="_blank">Go Back</a>
+                            </button>
+      </div>
+  </div>
+  </div>
+        
+                <div class="button">
+                    <button class="prev"><i class="ri-arrow-left-line"></i></button>
+                    <button class="next"><i class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
         </div>
+        <!-- main end -->
+
+
+        <!-- see more start-->
+
+        <!-- see more end -->
+
     </div>
-    <div class="item" style="background-image: url(https://img.freepik.com/premium-photo/leopard-nature_349893-3431.jpg) ;">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="name">leapord </div>
-            <div class="des">the leapord is one of the five extant species in the genus panthera The leopard is adapted to a variety of habitats ranging from rainforest to steppe ,including arid and montane areas . it is an opportunistic predator.</div>
-             <button> <a href="https://en.wikipedia.org/wiki/leapord#"> see more </a></button>     
-        </div>
-    </div>
-    <div class="item" style="background-image: url(https://media.istockphoto.com/id/105701467/photo/a-mother-elephant-walking-with-her-calf-in-the-grass.jpg?s=612x612&w=0&k=20&c=nHr8WlqXAEG6g9LadfeLxxT7Qj0hSMOx5dmhm7Tbmdw=);">
-        <div class="overlay"></div>
-        <div class="content">
-        <div class="name">Elephant</div>
-        <div class="des">Elephant is  the largest living land animals They are Herbivorus, and they stay near water when it accessible they are considered to be keystone species.</div>
-               <button> <a href="https://en.wikipedia.org/wiki/elephant#"> see more </a></button>
-    </div>
-</div>
-</div>
-</div>
-       <div class="button">
-        <button class="prev"><i class="ri-arrow-left-line"></i></button>
-        <button class="next"><i class="ri-arrow-right-line"></i></button>
-       </div>
-       </div>
-       </div>
-     <script src="fauna.js"></script>
+
+    <script src="avifauna.js"></script>
 </body>
 </html>
