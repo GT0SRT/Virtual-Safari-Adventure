@@ -177,7 +177,6 @@ width: 100%;
 /* height: 500%; */
 /* padding: 6rem 3rem 0; */
 transition: right .4s;
-overflow: hidden;
 }
 
 .nav__menu{
@@ -235,6 +234,9 @@ z-index: -1;
 .active-link{
 color: var(--first-color);
 }
+  .container{
+    overflow: hidden;
+  }
 }
 /* nav bar css end */
 
