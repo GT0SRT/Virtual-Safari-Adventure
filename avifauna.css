@@ -152,6 +152,10 @@ body{
     display: block;
   }
 
+  .header{
+    top: 1.5%;
+  }
+
 .nav__menu{
 position: fixed;
 top: 0;
@@ -221,6 +225,24 @@ z-index: -1;
 color: var(--first-color);
 }
 
+
+.container .slide .item:nth-child(3){
+  left: 50%;
+  display: none;
+}
+.container .slide .item:nth-child(4){
+  left: calc(50% + 220px);
+  display: none;
+}
+.container .slide .item:nth-child(5){
+  left: calc(50% + 440px);
+  display: none;
+}
+
+.container .item{
+  font-size: 10px;
+}
+
 }
 
 
@@ -252,7 +274,7 @@ color: var(--first-color);
   position: absolute;
   top: 50%;
   transform: translate(100%, -50%);
-  border-radius: 20px;
+  /* border-radius: 20px; */
   box-shadow: 0 20px 30px #757575;
   background-position: 50% 50%;
   background-size: cover;
