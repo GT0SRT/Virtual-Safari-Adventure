@@ -134,6 +134,7 @@ body{
 
 .nav__close, .nav__toggle{
   display: none;
+  margin-left: 100px;
 }
 
 .nav__logo{
@@ -154,6 +155,10 @@ body{
 @media screen and (max-width:1150px){
   .nav__close, .nav__toggle{
     display: block;
+  }
+
+  .header{
+    top:0;
   }
 
 .nav__menu{
@@ -245,6 +250,7 @@ color: var(--first-color);
   width: 100%;
   height: 100%;
   box-shadow: 0 20px 30px var(--main-color);
+  overflow: hidden;
 }
 
 .container .slide .item{
