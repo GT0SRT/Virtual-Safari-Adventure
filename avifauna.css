@@ -153,12 +153,11 @@ body{
 .mobile{
   display: none;
  }
-
- .content .btn2{
+.content .btn2{display:none;}
+ .content .btn2 a{
   color: black;
-   display: none;
  }
- .content .btn2:hover{
+ .content .btn2 a:hover{
   color: var(--main-color);
  }
 
