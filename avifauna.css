@@ -73,7 +73,7 @@ body{
 /* nav bar css start */
 
 .header{
-  position: absolute;
+  position: fixed;
   top: 3.6%;
   left: 1%;
   display: flex;
@@ -412,9 +412,8 @@ color: var(--first-color);
     padding: 0;
     top: 0;
     left: 0;
-    position: absolute;
   }
-  .container .slide .item:nth-child(3){
+/*   .container .slide .item:nth-child(3){
     left: 50%;
     display: none;
   }
@@ -428,7 +427,7 @@ color: var(--first-color);
   }
   .nav__actions{
     margin-left: 600px;
-  }
+  } */
 }
 
 @media(max-width:750px){
