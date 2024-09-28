@@ -154,6 +154,9 @@ body{
  .mobile{
   display: none;
  }
+.btn2{
+  display: none;
+}
 
  .content .btn2 a{
   color: black;
@@ -168,6 +171,9 @@ body{
   .nav__close, .nav__toggle{
     display: block;
   }
+  .btn2{
+  display: block;
+}
   .container .mobile{
     display: flex;
     margin-left: 10px;
