@@ -430,6 +430,7 @@ color: var(--first-color);
     padding: 0;
     top: 0;
     left: 0;
+    position: absolute;
   }
   .container .slide .item:nth-child(3){
     left: 50%;
