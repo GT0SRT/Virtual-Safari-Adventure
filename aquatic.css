@@ -162,12 +162,18 @@ body{
  .content .btn2 a:hover{
   color: var(--main-color);
  }
+.btn2{
+  display: none;
+}
 
 /* Navigation for mobile devices */
 @media screen and (max-width:1150px){
   .nav__close, .nav__toggle{
     display: block;
   }
+  .btn2{
+  display: block;
+}
   .container .mobile{
     display: flex;
     margin-left: 10px;
