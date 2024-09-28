@@ -402,10 +402,10 @@ color: var(--first-color);
   color: #fff;
 }
 
-@media(max-width:800px){
+/* @media(max-width:800px){
   .container{
     overflow: hidden;
-    /* margin-top: 50px; */
+   margin-top: 50px;
   }
   .button button{
     margin-bottom: 60px;
@@ -416,7 +416,7 @@ color: var(--first-color);
     padding: 0;
     top: 0;
     left: 0;
-  }
+  }*/
 /*   .container .slide .item:nth-child(3){
     left: 50%;
     display: none;
@@ -433,7 +433,7 @@ color: var(--first-color);
     margin-left: 600px;
   } */
 }
-
+/*
 @media(max-width:750px){
   .nav__actions{
     margin-left: 500px;
@@ -464,3 +464,4 @@ color: var(--first-color);
     margin-left: 150px;
   }
 }
+ */
