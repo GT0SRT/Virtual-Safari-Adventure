@@ -60,6 +60,12 @@ html, body{
        transform:rotate(360deg);         
    }
   }
+
+@media(max-width:800px){
+    .loader{
+      display: none;
+    }
+  }
   
     /* loader end */
   
@@ -433,9 +439,8 @@ color: var(--first-color);
       padding: 0;
       top: 0;
       left: 0;
-      position: absolute;
     }
-    .container .slide .item:nth-child(3){
+/*     .container .slide .item:nth-child(3){
       left: 50%;
       display: none;
     }
@@ -446,7 +451,7 @@ color: var(--first-color);
     .container .slide .item:nth-child(5){
       left: calc(50% + 440px);
       display: none;
-    }
+    } */
     .nav__actions{
       margin-left: 600px;
     }
